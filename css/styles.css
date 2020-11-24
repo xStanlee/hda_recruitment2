@@ -1,0 +1,132 @@
+:root {
+    --padding-form: 20px;
+    --padding-top: 6px;
+    --margin-left: 30px;
+}
+
+input[type] {
+    border: 1px solid black;
+}
+
+html > * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    margin: 25vh auto auto 25vw;
+    min-height: 20vh;
+    min-width: 50vw;
+    display: flex;
+}
+/************SEARCH***********/
+/************------***********/
+/************------***********/
+
+.container__search {
+    background-color: #c9c9c9;
+    min-width: 250px;
+    min-height: 200px;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__search-label {
+    padding-top: var(--padding-top);
+    margin-left: var(--margin-left);
+    margin-bottom: 2px;
+}
+
+.container__search-input {
+    border-radius: 3px;
+    margin: 0 10%;
+}
+
+.container__search-content {
+    background-color: #66a027;
+    border-radius: 3px 3px 100px 3px;
+    list-style-type: none;
+    margin: 0 10%;
+}
+
+/*************FORM************/
+/************------***********/
+/************------***********/
+
+.container__add {
+    min-width: 300px;
+    max-height: 200px;
+    background-color: #fea607;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container__add-span {
+    padding-top: calc(var(--padding-top)*3);
+    margin: 0 0 var(--padding-top) var(--margin-left);
+}
+
+.container__add-form {
+    padding: 20px 0 0 20px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container__add-form-field {
+    margin-bottom: 10%;
+    min-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.container__add-form-field:last-of-type {
+    margin-bottom: 5%;
+}
+
+.container__add-form-input {
+    min-width: 75%;
+}
+
+/*************INFO************/
+/************-LIST-***********/
+/**********-CALLBACK-*********/
+
+.callback-info-list {
+    max-width: 200px;
+    max-height: 70px;
+    position: absolute;
+    left: 58vw;
+    top: 25vh;
+
+    background-color: transparent;
+    color: white;
+    list-style-type: none;
+    z-index: 2;
+}
+
+.callback-info-list__item {
+    background-color: orangered;
+    margin-top: var(--margin-left);
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.callback-info-list__item-success {
+    background-color:green;
+}
+
+.callback-info-list__item-fail {
+    background-color:red;
+}

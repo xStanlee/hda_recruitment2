@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Recruitment task</title>
+  <meta name="task" content="hda-Recruitment_2">
+  <meta name="Patryk Stachura" content="Answeare">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+<main class="container">
+  <div class="container__search">
+    <label for="search" class="container__search-label">Search:</label>
+    <input type="text" name="search" class="container__search-input">
+    <ul class="container__search-content">
+      <!--Create UL in JS-->
+      <li class="container__search-content-item">
+        <p class="container__search-content-paragraph">Nothing found</p>
+      </li>
+    </ul>
+  </div>
+  <div class="container__add">
+    <span class="container__add-span">Add new</span>
+    <form action="POST" class="container__add-form">
+      <div class="container__add-form-field">
+        <label for="name" class="container__add-form-label">Name:</label>
+        <input type="text" name="name" class="container__add-form-input">
+      </div>
+      <div class="container__add-form-field">
+        <label for="age" class="container__add-form-label">Age:</label>
+        <input type="text" name="age" class="container__add-form-input">
+      </div>
+      <input type="submit" class="container__add-form-btn" value="Add">
+    </form>
+  </div>
+</main>
+
+<ul class="callback-info-list">
+  <!--
+  <li class="callback-info-list__item">
+    <p class="callback-info-list__paragraph">ERROR: Name or age not defined</p>
+  </li>
+  <li class="callback-info-list__item">
+    <p class="callback-info-list__paragraph">ERROR: Name or age not defined</p>
+  </li>
+  -->
+</ul>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

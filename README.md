@@ -21,5 +21,5 @@ Download/Clone repo on your locale device.
       4. Validation on add. :heavy_check_mark: 
  - BE
       1. Create logic for BE. :heavy_check_mark:
-      2. Works while server running. (file not changing). :x:
+      2. Works while server running. (file not changing). :heavy_check_mark:
       3. Have problem with ES6 module at express. :x:
